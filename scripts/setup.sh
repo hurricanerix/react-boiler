@@ -18,6 +18,7 @@ npm install --save-dev uglify
 npm install --save-dev cssshrink
 
 # Dev Tools
+npm install --save-dev eslint
 npm install --save-dev watch
 npm install --save-dev http-server
 

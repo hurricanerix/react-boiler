@@ -1,5 +1,5 @@
 //var React = require('react');
-import React from 'react';
+import React from "react";
 
 // OLD WAY:
 //var Logo = React.createClass({
@@ -14,4 +14,4 @@ class Logo extends React.Component {
 }
 
 // OLD WAY: module.exports = Logo;
-export default Logo // TODO: ;
+export default Logo;
