@@ -1,0 +1,12 @@
+# VI/VIM files
+*.swp
+
+# Node tools/libs
+node_modules/
+
+# Generated files
+bundle*
+js/build/
+
+# Release builds
+release/
