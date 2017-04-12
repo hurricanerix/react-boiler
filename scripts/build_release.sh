@@ -13,14 +13,14 @@ mkdir release
 sh scripts/bundle.sh
 
 # Minify JS into release directory
-uglify -s bundle.js -o release/bundle.js
+uglify -s app/bundle.js -o release/bundle.js
 
 # Minify CSS into release directory
-cssshrink bundle.css > release/bundle.css
+cssshrink app/bundle.css > release/bundle.css
 
 # Copy HTML and images into release directory
-cp index.html release/index.html
-cp -r images/ release/images/
+cp app/index.html release/index.html
+cp -r app/images/ release/images/
 
 # Done
 echo -n "$SCRIPT complete: "; date; echo;

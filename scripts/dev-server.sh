@@ -11,7 +11,7 @@ if [ "$FLAG" != "-r" ] && [ "$FLAG" != "" ]; then
 fi
 
 WATCH_CMD='scripts/bundle.sh'
-HTTP_TARGET='.'
+HTTP_TARGET='app/'
 
 if [ "$FLAG" == "-r" ]; then
 	WATCH_CMD='scripts/build_release.sh'
@@ -22,7 +22,7 @@ fi
 echo -n "$SCRIPT start: "; date;
 
 trap 'kill %1;' SIGINT
-watch "sh $WATCH_CMD" js/source css --ignoreDotFiles 2>&1 | \
+watch "sh $WATCH_CMD" app/js/source app/css --ignoreDotFiles 2>&1 | \
 sed -e 's/^/[watch] /' & \
 http-server $HTTP_TARGET 2>&1 | sed -e 's/^/[http-server] /'
 

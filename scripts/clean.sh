@@ -15,13 +15,13 @@ echo -n "$SCRIPT start: "; date;
 echo "removing 'release' directory"
 rm -rf release
 
-echo "removing 'js/build/' files"
-rm -rf js/build
-mkdir -p js/build
+echo "removing 'app/js/build/' files"
+rm -rf app/js/build
+mkdir -p app/js/build
 
-echo "removing 'bundle.*' files"
-rm -f bundle.js
-rm -f bundle.css
+echo "removing 'app/bundle.*' files"
+rm -f app/bundle.js
+rm -f app/bundle.css
 
 if [ "$FLAG" == "-n" ]; then
 	#

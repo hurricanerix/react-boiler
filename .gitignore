@@ -5,8 +5,8 @@
 node_modules/
 
 # Generated files
-bundle*
-js/build/
+app/bundle*
+app/js/build/
 
 # Release builds
 release/
